@@ -2,7 +2,7 @@ Team 13 Project Management
 
 ***3 MEMBER GROUP
 	-Sergio Mendez -> id : 2014522
-	-Brian phan-Tran -> id :
+	-Brian phan-Tran -> id : 1863258
 	-Andrew Carranza -> id :1636927
 
 
