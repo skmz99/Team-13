@@ -170,6 +170,13 @@
                 $resul20 = mysqli_query($mysqli,$sql30);
                 $data30 = mysqli_fetch_assoc($resul20);
                 $hours0 = $data30['Status'];
+                
+                $sql2 = "SELECT Name FROM employee WHERE employee_id = '$e_id10' ";
+                $result2 = mysqli_query($mysqli,$sql2);
+                $printname = mysqli_fetch_assoc($result2);
+                $_SESSION['employee_name'] = $printname['Name'];
+                
+                
                 echo 'Welcome, ';
                 echo $_SESSION['employee_name'];
                 echo ". You are currently ";
@@ -295,13 +302,7 @@ if($mysqli->connect_errno){
         echo $_SESSION['employee_id'];
         */
         
-    $sql2 = "SELECT Name FROM employee WHERE employee_id = '$e_id' ";
-    $result2 = mysqli_query($mysqli,$sql2);
-    $printname = mysqli_fetch_assoc($result2);
-    $_SESSION['employee_name'] = $printname['Name'];
-    
-    echo 'Welcome, ';
-    echo $_SESSION['employee_name'];
+
     if($output > 0){ //if output is greater than 0 create popup. after pressing OK output is given 0 to dismiss the popup
         echo "<script> alert('There are $output new messages. Please head into log and address the issue.');window</script>";
         $output = 0;
