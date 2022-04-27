@@ -189,7 +189,7 @@ if($mysqli->connect_errno){
         echo "<td>" .'Project ID'."</td>";
         echo "<td>" .'Project Name'. "</td>";
         echo "<td>" .'Hours'. "</td>";
-        echo "<td>" .'Cost'."</td>";
+        //echo "<td>" .'Cost'."</td>";
         echo "<td>" .'Project Status'. "</td>";
         echo "<td>" .'Department Number'. "</td>";
         while($row = mysqli_fetch_assoc($result2)){
