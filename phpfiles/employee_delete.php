@@ -77,7 +77,6 @@
         <div class="container">
             <p>Employee_id: <input type="text" name="Employee_id"></p>
             <p>Name: <input type="text" name="name"></p>
-            <p>Username: <input type="text" name="username"></p>
             <input type="Submit">
         </div>
 </div>
